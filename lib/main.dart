@@ -16,7 +16,9 @@ void main() {
           ),
           GoRoute(
             path: '/info_screen', // Страница с деталями
-            builder: (context, state) => const InfoScreen(),
+            builder: (context, state) => const InfoScreen(
+              //apiData: state.extra as Map<String, dynamic>,
+            ),
           ),
           // Добавьте маршруты для других страниц
         ],
